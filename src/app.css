@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #ffffff;
+  --text-primary: #1a202c;
+  --bg-secondary: #f7fafc;
+  --text-secondary: #4a5568;
+}
+
+.dark {
+  --bg-primary: #1a202c;
+  --text-primary: #f7fafc;
+  --bg-secondary: #2d3748;
+  --text-secondary: #a0aec0;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.btn {
+  @apply bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition duration-200;
+}
+
+.input {
+  @apply p-2 rounded bg-gray-700 text-white border-2 border-gray-600 focus:outline-none focus:border-red-600;
+}
